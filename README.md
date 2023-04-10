@@ -1,4 +1,5 @@
 # Frontend Mentor - Expenses chart component
+Live site - https://noak-sergey.github.io/expenses-chart/
 
 ![Design preview for the Expenses chart component coding challenge](./design/desktop-preview.jpg)
 
