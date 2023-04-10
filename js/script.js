@@ -11,14 +11,17 @@ window.addEventListener("DOMContentLoaded", () => {
     const paintingMaxBar = () => {
         const columns = document.querySelectorAll('.columns__column');
         console.log(columns);
-        let maxBar = columns[0].style.height;
-        
-        for( let i = 1; i < columns.length; i++) {
-            if(columns[i-1].style.height > maxBar) {
-                maxBar = columns[i].style.height
-            }    
-        }
-        return console.log(maxBar);
+        let maxHeightBar = 0;
+        let maxBarIndex = 0;
+
+        columns.forEach((column, index) => {
+            
+            if(parseFloat(column.style.height) > maxHeightBar) {
+                maxHeightBar = parseFloat(column.style.height)
+                maxBarIndex = index;
+            }
+        })
+        columns[maxBarIndex].classList.add('active')
     }
 
     const getData = async () => {
