@@ -138,15 +138,24 @@ body {
 .active {
     background-color: hsl(186, 34%, 60%);
 }
-
 .hide {
     display: none;
 }
-
 .show {
     display: block;
 }
 
+@media (max-width: 425px) {
+    .top {
+        min-width: 320px;
+        padding: 20px;
+    }
+    .gistogram {
+        &__container {
+            padding: 10px;
+        }
+    }
+}
 /* ===========Footer============== */
 .attribution {
     font-size: 11px ;

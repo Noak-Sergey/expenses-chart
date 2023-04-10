@@ -207,6 +207,15 @@ body {
   display: block;
 }
 
+@media (max-width: 425px) {
+  .top {
+    min-width: 320px;
+    padding: 20px;
+  }
+  .gistogram__container {
+    padding: 10px;
+  }
+}
 /* ===========Footer============== */
 .attribution {
   font-size: 11px;
